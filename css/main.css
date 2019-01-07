@@ -1,0 +1,62 @@
+h2{
+    font-family: 'Muli', sans-serif;
+}
+
+section{
+    margin-top: 5rem;
+}
+
+.secao-titulo{
+    margin-bottom: 2.5rem;
+}
+
+.mini-titulo{
+    font-family: 'Muli', sans-serif;
+    font-weight: 600;
+    color: #ff5a93;
+}
+
+.botao-mais{
+    font-family: 'Muli', sans-serif;
+    color: #ffffff;
+    font-weight: 600;
+
+    margin-top: 2.5rem;
+}
+
+#metodologia{
+    background-image: url('../img/bg-azul.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    padding: 5%;
+}
+
+.mini-titulo-2{
+    color: #ffd33d;
+    font-weight: 600;
+    font-family: 'Muli', sans-serif;
+}
+
+.titulo-claro{
+    font-weight: 600;
+}
+
+.titulo-claro, .txt-claro{
+    font-family: 'Muli', sans-serif;
+    color: #ffffff;
+}
+
+#servicos-cat{
+    margin-top: 5rem;
+}
+
+
+
+#nossos-servicos{
+
+}
+
+#equipe{
+    background-color: #ffd33e;
+}
