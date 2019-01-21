@@ -16,6 +16,27 @@ section{
     color: #ff5a93;
 }
 
+a{
+    text-decoration: none;
+}
+
+.saiba-mais{
+    font-family: 'Muli', sans-serif;
+    font-weight: 600;
+}
+
+.saiba-mais::before{
+   content: url('../img/onda-amarela.png');
+    position: relative;
+    left: 3rem;
+    top: .5rem;
+    z-index: -1;
+}
+
+.saiba-mais::before:hover{
+    content: url('../img/onda-amarela.png')
+}
+
 .botao-mais{
     font-family: 'Muli', sans-serif;
     color: #ffffff;
@@ -59,4 +80,41 @@ section{
 
 #equipe{
     background-color: #ffd33e;
+    padding: 5%;
+}
+
+.etiqueta-time{
+    background-color: #faf7f7;
+    padding: 5%;
+    margin-left: 2px;
+    
+    font-size: 17px;
+    color: #ff5a93;
+    font-weight: 600;
+}
+
+iframe{
+    border-radius: 50%;
+}
+
+#rodape{
+    background-color: #222222;
+    padding: 5%;
+}
+
+#rodape h6, p{
+    color: #faf7f7;
+}
+
+#rodape p{
+    font-size: 15px;
+}
+
+#rodape h6::after{
+    content:url('../img/onda-verde.png');
+    position: relative;
+    z-index: 1;
+
+    top: 1rem;
+    left: -4.5rem;
 }
