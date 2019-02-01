@@ -26,15 +26,17 @@ a{
 }
 
 .saiba-mais::before{
-   content: url('../img/onda-amarela.png');
+   content: url('../img/yellow-wave.png');
     position: relative;
-    left: 3rem;
+    left: 5rem;
     top: .5rem;
     z-index: -1;
 }
 
 .saiba-mais::before:hover{
-    content: url('../img/onda-amarela.png')
+    content: url('../img/purple-wave.png');
+    position: relative;
+
 }
 
 .botao-mais{
@@ -70,12 +72,20 @@ a{
 
 #servicos-cat{
     margin-top: 5rem;
+    margin-bottom: 2.5rem;
 }
 
 
 
 #nossos-servicos{
 
+}
+
+
+
+.veja{
+    color: #222222;
+    font-weight: 600;
 }
 
 #equipe{
