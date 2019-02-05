@@ -16,27 +16,22 @@ section{
     color: #ff5a93;
 }
 
-a{
-    text-decoration: none;
-}
-
 .saiba-mais{
     font-family: 'Muli', sans-serif;
     font-weight: 600;
 }
 
 .saiba-mais::before{
-   content: url('../img/yellow-wave.png');
+   content: url('../img/waves.png');
     position: relative;
     left: 5rem;
-    top: .5rem;
+    top: 2rem;
     z-index: -1;
+    transition: 0.3s;
 }
 
 .saiba-mais::before:hover{
-    content: url('../img/purple-wave.png');
-    position: relative;
-
+    top: -1rem;
 }
 
 .botao-mais{
@@ -53,6 +48,18 @@ a{
     background-size:cover;
     background-position:center;
     padding: 5%;
+}
+
+.conheca{
+    position: relative;
+}
+
+.conheca::before{
+    content: url('../img/waves-2.png');
+    top: .5rem;
+    left: -0.5rem;
+    position: absolute;
+    z-index: 0;
 }
 
 .mini-titulo-2{
@@ -75,17 +82,31 @@ a{
     margin-bottom: 2.5rem;
 }
 
-
-
-#nossos-servicos{
-
+.marcado{
+    position: relative;
 }
 
-
+.marcado::before{
+    content: "";
+    position: absolute;
+    background-color: #ff8868;
+    
+    height: 100px;
+    width: 600px;
+    z-index: -1;
+    top: 0.5rem;
+}
 
 .veja{
-    color: #222222;
     font-weight: 600;
+    position: relative;
+}
+
+.veja::before{
+    content: url('../img/waves-3.png');
+    position: absolute;
+    top: 0.5rem;
+    z-index: -1;
 }
 
 #equipe{
