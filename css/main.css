@@ -27,11 +27,11 @@ section{
     left: 5rem;
     top: 2rem;
     z-index: -1;
-    transition: 0.3s;
+    transition: 0.2s ease-in-out;
 }
 
-.saiba-mais::before:hover{
-    top: -1rem;
+.saiba-mais:hover::before{
+    top: 1.5rem;
 }
 
 .botao-mais{
@@ -59,7 +59,13 @@ section{
     top: .5rem;
     left: -0.5rem;
     position: absolute;
-    z-index: 0;
+    z-index: 1;
+
+    transition: 0.3s ease-in-out;
+}
+
+.conheca:hover::before{
+    top: -1rem;
 }
 
 .mini-titulo-2{
@@ -107,6 +113,12 @@ section{
     position: absolute;
     top: 0.5rem;
     z-index: -1;
+
+    transition: 0.3s ease-in-out;
+}
+
+.veja:hover::before{
+    top: -0.3rem;
 }
 
 #equipe{
@@ -124,9 +136,10 @@ section{
     font-weight: 600;
 }
 
-iframe{
-    border-radius: 50%;
+.mapa{
+    margin-top: 2.5rem;
 }
+
 
 #rodape{
     background-color: #222222;
@@ -149,3 +162,4 @@ iframe{
     top: 1rem;
     left: -4.5rem;
 }
+

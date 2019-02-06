@@ -2,14 +2,14 @@ ul li{
   font-family: 'Muli', sans-serif;
 }
 
+ul{
+  list-style: none;
+}
+
 *,
 *:before,
 *:after {
   box-sizing: border-box;
-}
-
-a{
-    text-decoration: none;
 }
 
 label .menu {
@@ -93,3 +93,10 @@ label .menu {
     text-decoration: none;
   }
   
+
+
+.menu-item:hover{
+  color: #000;
+  background-color: #e80081;
+  transition: width .3s ease;
+}
