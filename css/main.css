@@ -45,9 +45,11 @@ section{
 #metodologia{
     background-image: url('../img/bg-azul.png');
     background-repeat:no-repeat;
+    z-index: -1;
     background-size:cover;
     background-position:center;
     padding: 5%;
+
 }
 
 .conheca{
@@ -59,7 +61,7 @@ section{
     top: .5rem;
     left: -0.5rem;
     position: absolute;
-    z-index: 1;
+    z-index: 0;
 
     transition: 0.3s ease-in-out;
 }
@@ -163,3 +165,14 @@ section{
     left: -4.5rem;
 }
 
+.formulario{
+    margin-top: 7.5rem;
+  }
+
+  .icones{
+    transition: .2s ease-in-out;
+  }
+  
+  .icones:hover{
+    transform: scale(1.2);
+  }
