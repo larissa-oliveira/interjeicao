@@ -1,0 +1,30 @@
+#topo-roxo{
+    background-color: #7360c2;
+    height: 600px;
+}
+
+#txt-topo{
+    position: relative;
+    top: 10rem;
+}
+
+#txt-topo h5{
+    color: #ffffff;
+}
+
+#textao{
+    margin-top: 2.5rem;
+}
+
+#textao p{
+    text-align: justify;
+    font-size: 16px;
+}
+
+#nossos-criativos{
+    margin-top: 1.5rem;
+}
+
+#nossos-criativos h5{
+    color: #7360c2;
+}
