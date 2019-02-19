@@ -1,6 +1,14 @@
+body, html {
+    height: 100%;
+  }
+  
 #topo-roxo{
     background-color: #7360c2;
     height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #txt-topo{
@@ -12,11 +20,18 @@
     color: #ffffff;
 }
 
+#em-pe h6{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+}
+
 #textao{
     margin-top: 2.5rem;
 }
 
-#textao p{
+.textao{
     text-align: justify;
     font-size: 16px;
 }
@@ -25,6 +40,40 @@
     margin-top: 1.5rem;
 }
 
-#nossos-criativos h5{
+#nossos-criativos h5, #psiu-haha h3{
     color: #7360c2;
+}
+
+#psiu-haha{
+    margin-top: 5rem;
+}
+
+.social-icon{
+    transition: .2s ease-in-out;
+  }
+  
+  .social-icon:hover{
+    transform: scale(1.1);
+  }
+
+#rodape{
+    background-color: #222222;
+    padding: 5%;
+}
+
+.txt-rodape, h6{
+    color: #faf7f7;
+}
+
+#rodape p{
+    font-size: 15px;
+}
+
+#rodape h6::after{
+    content:url('../img/onda-verde.png');
+    position: relative;
+    z-index: 1;
+
+    top: 1rem;
+    left: -4.5rem;
 }
