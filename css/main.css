@@ -7,8 +7,16 @@
 
 /**/
 
-h2{
+*{
     font-family: 'Muli', sans-serif;
+}
+
+#sobre-nos h2{
+    font-weight: 800;
+}
+
+#sobre-nos-descricao{
+    margin-top: 3rem;
 }
 
 section{
@@ -20,27 +28,26 @@ section{
 }
 
 .mini-titulo{
-    font-family: 'Muli', sans-serif;
     font-weight: 600;
     color: #ff5a93;
 }
 
 .saiba-mais{
-    font-family: 'Muli', sans-serif;
     font-weight: 600;
+    font-size: 20px;
 }
 
 .saiba-mais::before{
    content: url('../img/waves.png');
     position: relative;
-    left: 5rem;
-    top: 2rem;
+    left: 6.3rem;
+    top: 3.2rem;
     z-index: -1;
     transition: 0.2s ease-in-out;
 }
 
 .saiba-mais:hover::before{
-    top: 1.5rem;
+    top: 2.5rem;
 }
 
 .botao-mais{
@@ -68,11 +75,13 @@ section{
 
 .conheca{
     position: relative;
+    font-size: 20px;
+    font-weight: 800;
 }
 
 .conheca::before{
     content: url('../img/waves-2.png');
-    top: .5rem;
+    top: 1rem;
     left: -0.5rem;
     position: absolute;
     z-index: 0;
@@ -81,7 +90,11 @@ section{
 }
 
 .conheca:hover::before{
-    top: -1rem;
+    top: .1rem;
+}
+
+#nossos-servicos h2{
+    font-weight: 800;
 }
 
 .mini-titulo-2{
@@ -104,9 +117,15 @@ section{
     margin-bottom: 2.5rem;
 }
 
+#servicos-cat h5{
+    font-weight: 800;
+}
+
 .marcado{
     position: relative;
+    padding-top: .5rem;
 }
+
 
 .marcado::before{
     content: "";
@@ -114,20 +133,25 @@ section{
     background-color: #ff8868;
     
     height: 100px;
-    width: 600px;
+    width: 430px;
     z-index: -1;
     top: 0.5rem;
+    display: flexbox;
+    align-items: center;
+    margin-left: 1.5rem;
 }
 
 .veja{
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 700;
     position: relative;
 }
 
 .veja::before{
     content: url('../img/waves-3.png');
     position: absolute;
-    top: 0.5rem;
+    top: 1.4rem;
+    margin-left: -.2rem;
     z-index: -1;
 
     transition: 0.3s ease-in-out;
@@ -142,6 +166,10 @@ section{
     padding: 5%;
 }
 
+#equipe h2{
+    font-weight: 800;
+}
+
 .etiqueta-time{
     background-color: #faf7f7;
     padding: 5%;
@@ -150,6 +178,10 @@ section{
     font-size: 17px;
     color: #ff5a93;
     font-weight: 600;
+}
+
+#contato h2{
+    font-weight: 800;
 }
 
 .mapa{
@@ -194,3 +226,9 @@ section{
 .txt-rodape{
     margin-top: 1rem;
 }
+
+#map {
+    height: 450px;
+    width: 500px;
+    border-radius: 100%;
+  }

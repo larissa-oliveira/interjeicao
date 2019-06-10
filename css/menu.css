@@ -93,6 +93,11 @@ label .menu {
     text-decoration: none;
   }
   
+  .menu-item{
+    font-size: 22px;
+  }
+
+
 .menu-item:hover{
   color: #000;
   background-color: #ff596c;
