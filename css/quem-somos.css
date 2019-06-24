@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+*{
+    font-family: 'Muli', sans-serif;
+}
+
 body, html {
     height: 100%;
   }
@@ -16,15 +22,24 @@ body, html {
     top: 10rem;
 }
 
-#txt-topo h5{
-    color: #ffffff;
+#txt-topo h2{
+    font-weight: 700;
 }
 
-#em-pe h6{
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    bottom: 0;
+#txt-topo h5{
+    color: #ffffff;
+    font-weight: 600;
+}
+
+#social{
+    width: 500px;
+    transform: rotate(-90deg);
+}
+
+#social h6{
+    color: #000;
+    font-weight: 600;
+    display: inline;
 }
 
 #textao{
@@ -42,6 +57,7 @@ body, html {
 
 #nossos-criativos h5, #psiu-haha h3{
     color: #7360c2;
+    font-weight: 600;
 }
 
 #psiu-haha{
