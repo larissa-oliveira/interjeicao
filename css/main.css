@@ -1,16 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
 @media only screen and (max-device-width: 1366px) {
     #metodologia {
       background-attachment: scroll;
     }
   }
 
-
-/**/
-
 *{
     font-family: 'Muli', sans-serif;
 }
 
+.txt-white{
+    color: #ffffff;
+}
+
+/*HEADER*/  
+ #menu-principal ul{
+    list-style: none;
+    position: fixed;
+  }
+ #menu-principal ul li a{
+     text-decoration: none;
+     transition: .2s ease-in-out;
+     padding: .5rem;
+ }
+ #menu-principal ul li a:hover{
+     text-decoration: none;
+     color: #fff;
+     padding: .5rem 1rem;
+ } 
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  
+  label .menu {
+      position: fixed;
+      right: -100px;
+      top: -100px;
+      z-index: 100;
+      width: 200px;
+      height: 200px;
+      background: #fff;
+      border-radius: 50% 50% 50% 50%;
+      transition: 0.5s ease-in-out;
+      box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
+      cursor: pointer;
+    }
+    label .hamburger {
+      position: absolute;
+      top: 135px;
+      left: 50px;
+      width: 30px;
+      height: 2px;
+      background: #e80081;
+      display: block;
+      -webkit-transform-origin: center;
+              transform-origin: center;
+      transition: 0.5s ease-in-out;
+    }
+    label .hamburger:after, label .hamburger:before {
+      transition: 0.5s ease-in-out;
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: #e80081;
+    }
+    label .hamburger:before {
+      top: -10px;
+    }
+    label .hamburger:after {
+      bottom: -10px;
+    }
+    label input {
+      display: none;
+    }
+    label input:checked + .menu {
+      box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff;
+      border-radius: 0;
+    }
+    label input:checked + .menu .hamburger {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+    }
+    label input:checked + .menu .hamburger:after {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+      bottom: 0;
+    }
+    label input:checked + .menu .hamburger:before {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+      top: 0;
+    }
+    label input:checked + .menu + ul {
+      opacity: 1;
+    }
+    label ul {
+      z-index: 200;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: 0.25s 0s ease-in-out;
+    }
+    label a {
+      margin-bottom: 1em;
+      display: block;
+      color: #000;
+      text-decoration: none;
+    }
+    .menu-item{
+      font-size: 22px;
+    }
+  .menu-item:hover{
+    color: #000;
+    background-color: #ff596c;
+    -webkit-transition: width .3s ease-in-out;
+  }
+
+
+.titulo-pag, .titulo-destaque, .accordion-header{
+    font-weight: 800;
+}
+#sobre-nos{
+    padding: 5rem 0;
+}
 #sobre-nos h2{
     font-weight: 800;
 }
@@ -18,11 +138,6 @@
 #sobre-nos-descricao{
     margin-top: 3rem;
 }
-
-section{
-    margin-top: 5rem;
-}
-
 .secao-titulo{
     margin-bottom: 2.5rem;
 }
@@ -91,6 +206,10 @@ section{
 
 .conheca:hover::before{
     top: .1rem;
+}
+
+#nossos-servicos{
+    padding: 5rem 0;
 }
 
 #nossos-servicos h2{
@@ -179,7 +298,9 @@ section{
     color: #ff5a93;
     font-weight: 600;
 }
-
+#contato{
+    padding: 5rem 0;
+}
 #contato h2{
     font-weight: 800;
 }
@@ -196,19 +317,18 @@ section{
 
 #rodape h6, p{
     color: #faf7f7;
+    position: relative;
 }
 
 #rodape p{
     font-size: 15px;
 }
-
 #rodape h6::after{
     content:url('../img/onda-verde.png');
-    position: relative;
+    position: absolute;
     z-index: 1;
-
     top: 1rem;
-    left: -4.5rem;
+    left: 0;
 }
 
 .formulario{
@@ -232,3 +352,204 @@ section{
     width: 500px;
     border-radius: 100%;
   }
+
+  /*PAGINA QUEM SOMOS*/
+
+#topo-quem-somos{
+    background-color: #7360c2;
+    padding: 10rem 0 5rem;
+}
+#topo-quem-somos .titulo-pag{
+    font-weight: 800;
+}
+#conteudo-quem-somos{
+    padding: 1.5rem 0 3rem;
+}
+#conteudo-quem-somos .quem-somos-txt{
+    color: #000;
+}
+#social .txt-vertical{
+    transform-origin: 0;
+    transform: rotate(-90deg);
+    padding: 2rem 0;
+    color: #000;
+    font-weight: 800;
+}
+#nossos-criativos{
+  padding: 1.5rem 0;
+}
+#nossos-criativos .titulo-secao{
+    padding-bottom: 2rem;
+}
+#nossos-criativos .titulo-secao h2{
+    font-size: 2.3rem;
+    font-weight: 800;
+}
+#nossos-criativos h5, #psiu-haha h3{
+    color: #7360c2;
+    font-weight: 600;
+}
+#psiu-haha{
+    padding: 5rem 0;    
+}
+.social-icon{
+    transition: .2s ease-in-out;
+}
+  .social-icon:hover{
+transform: scale(1.1);
+}
+#rodape{
+    background-color: #222222;
+    padding: 5%;
+}
+.txt-rodape, h6{
+    color: #faf7f7;
+}
+#rodape p{
+    font-size: 15px;
+}
+
+/*PÁGINA NOSSOS SERVICOS*/
+
+#topo-servicos{
+    background-color: #ff8868;
+    padding: 10rem 0 5rem;
+}
+#servicos-items{
+    padding: 5rem 0;
+}
+.srvc-item h5{
+    color: #000;
+    font-weight: 800;
+}
+.srvc-item p{
+    color: #000;
+}
+.srvc-item{
+    display: flexbox;
+    background-color: #faf7f7;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 5rem 2.5rem;
+    position: relative;
+}
+.srvc-item::before{
+    content: "";
+    position: absolute;
+    background-color: #ffd33d;
+    width: 100%;
+    height: 560px;
+    left: 1rem;
+    z-index: -1;
+    top: 1rem;
+}
+.srvc-item ul{
+    list-style: none;
+}
+.srvc-item ul li{
+    margin: 1rem 0;
+    padding: 0;
+    position: relative;
+}
+.srvc-item ul li::before{
+    content: url(../img/check.png);
+    position: absolute;
+    z-index: 9;
+    left: -2.2rem;
+}
+#portfolio-servicos{
+    padding-bottom: 5rem;
+}
+
+#portfolio-servicos p{
+    color: #ff8868;
+    font-weight: 800;
+}
+#portfolio-servicos h2{
+    color: #000;
+    font-weight: 800;
+    background-color: #ff8868;
+}
+#portfolio-servicos .item-portfolio{
+    background-color: #7360c2;
+    max-width: 300px;
+    height: 300px;
+    margin: 4px;
+}
+#portfolio-servicos .items-portfolio{
+    padding: 2.5rem 0;
+}
+
+/*PÁGINA METODOLOGIA*/
+
+#topo-metodologia{
+    background: url(../img/bg-azul-metodologia.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #63b0dd;
+    padding: 10rem 0 5rem 0;
+}
+#social .btn-social-topo a{
+    text-decoration: none;
+    transition: .2s ease-in-out;
+}
+#social .btn-social-topo a:hover{
+    text-decoration: none;
+    transform: scale(1.2);
+}
+#social .btn-social-topo p{
+    color: #000;
+    font-weight: 800;
+}
+#etapas{
+    padding: 2.5rem 0;
+    background-color: #faf7f7;
+}
+#accordionEtapas{
+    padding: 2.5rem 0;
+}
+#accordionEtapas .accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.5rem;
+    color: #212529;
+    font-weight: 600;
+    text-align: left;
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
+}
+#accordionEtapas .accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #63b0dd;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+    font-size: 1.5rem;
+    padding: 2rem;
+    font-weight: 600;
+}
+#accordionEtapas .accordion-item{
+    margin: 1rem 0;
+    border: none;
+}
+#accordionEtapas .accordion-button::after{
+    background-image: url(/img/mais.png);
+}
+#contato-metodologia{
+    padding: 3.5rem 0;
+    /*background: url(../img/bg-pontos-contato.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+}
+#contato-metodologia form .form-label{
+    color: #ff5a93;
+    font-weight: 800;
+}

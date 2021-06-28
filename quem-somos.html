@@ -5,33 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Quem somos? - Interjeição!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/quem-somos.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-    <section id="topo-roxo" class="container-fluid">        
-        <div class="row">
-            <div id="txt-topo" class="col text-center">
-                <h5>sobre nós</h5>
-                <h2>olá! nós somos Interjeição! </h2>
-                <h2>uma pequena agência de</h2>
-                <h2>Brasília.</h2>
-            </div>
-        </div>  
+    <header id="menu-principal" class="container-fluid">
+        <label>
+            <input type='checkbox'>
+            <span class='menu'>
+                <span class='hamburger'></span>
+            </span>
+            <ul>
+                <li>
+                  <a href='/' class="menu-item">home</a>
+                </li>
+                <li>
+                   <a href='/quem-somos.html' style="text-decoration: none;" class="menu-item">quem somos</a>
+                </li>
+                <li>
+                    <a href='/metodologia.html' style="text-decoration: none;" class="menu-item">metodologia</a>
+                </li>
+                <li>
+                    <a href='/nossos-servicos.html' style="text-decoration: none;" class="menu-item">nossos serviços</a>
+                </li>
+                <li>
+                    <a href='#' style="text-decoration: none;" class="menu-item">contato</a>
+                </li>
+            </ul>
+        </label>        
+    </header>
 
-        <div class="row" id="social-media">
-                <div id="social" class="col align-self-end">
-                    <h6>instagram</h6>
-                    <h6>facebook</h6>
+    <section id="topo-quem-somos">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div id="txt-topo" class="col-md-5 text-center">
+                    <h5 class="txt-white">sobre nós</h5>
+                    <h2 class="titulo-pag">olá! nós somos Interjeição! 
+                        uma pequena agência de Brasília.
+                    </h2>
                 </div>
             </div>
+        </div>
+        <div class="container">
+            <div id="social">
+                <div class="row">
+                    <div class="col-md">
+                        <p class="txt-white txt-vertical">instagram</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <p class="txt-white txt-vertical">facebook</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="textao" class="container">
-        <div class="row">
+
+    <section id="conteudo-quem-somos" class="container">
+        <div class="row justify-content-md-center">
             <div class="col">
                 <div>
-                    <p class="pontilhado-1 textao">Aenean quis ante eu arcu mollis gravida. Phasellus tincidunt magna orci, 
+                    <p class="pontilhado-1 quem-somos-txt">Aenean quis ante eu arcu mollis gravida. Phasellus tincidunt magna orci, 
                     vitae rhoncus eros consequat at. Nunc odio neque, lobortis id tincidunt nec, 
                     tempor ac orci. Vestibulum accumsan, nisi ut vestibulum venenatis, eros 
                     sapien vestibulum felis, nec ullamcorper quam risus in risus. Pellentesque 
@@ -41,7 +77,7 @@
                      tellus. Phasellus eu sodales ipsum, nec rutrum mi.
                     </p>
                 </div>
-                    <p class="pontilhado-2 textao">Aenean quis ante eu arcu mollis gravida. Phasellus tincidunt magna orci, 
+                    <p class="pontilhado-2 quem-somos-txt">Aenean quis ante eu arcu mollis gravida. Phasellus tincidunt magna orci, 
                      vitae rhoncus eros consequat at. Nunc odio neque, lobortis id tincidunt nec, 
                      tempor ac orci. Vestibulum accumsan, nisi ut vestibulum venenatis, eros 
                      sapien vestibulum felis, nec ullamcorper quam risus in risus. Pellentesque 
@@ -50,7 +86,7 @@
                      tincidunt justo. Vestibulum quis lacus eget lectus faucibus aliquam in nec
                      tellus. Phasellus eu sodales ipsum, nec rutrum mi.
                     </p>
-                    <p class="pontilhado-3 textao">Aenean quis ante eu arcu mollis gravida. Phasellus tincidunt magna orci, 
+                    <p class="pontilhado-3 quem-somos-txt">Aenean quis ante eu arcu mollis gravida. Phasellus tincidunt magna orci, 
                      vitae rhoncus eros consequat at. Nunc odio neque, lobortis id tincidunt nec, 
                      tempor ac orci. Vestibulum accumsan, nisi ut vestibulum venenatis, eros 
                      sapien vestibulum felis, nec ullamcorper quam risus in risus. Pellentesque 
@@ -62,16 +98,19 @@
             </div>
         </div>
     </section>
+
     <section id="nossos-criativos" class="container">
-        <div class="row">
-            <div class="col">
-                <h5 class="text-center">conheça a nossa equipe</h5>
-                <h2 class="text-center">aqui estão os nossos criativos</h2>
+        <div class="row justify-content-md-center">
+            <div class="col-6">
+                <div class="titulo-secao">
+                    <h5 class="text-center">conheça a nossa equipe</h5>
+                    <h2 class="text-center">aqui estão os nossos criativos</h2>
+                </div> 
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <img src="img/pessoas.png" alt="">
+        <div class="row justify-content-md-center">
+            <div class="col-md-6">
+                <img src="img/pessoas.png" alt="pessoas" class="img-fluid">
             </div>
             <div class="col">
 
@@ -80,12 +119,12 @@
     </section>
 
     <section id="psiu-haha" class="container">
-        <div class="row">
-            <div class="col">
+        <div class="row justify-content-md-center">
+            <div class="col-md-9">
                 <h3>psiu!</h3>
                 <h3>segue a gente</h3>
             </div>
-            <div class="col">
+            <div class="col-md">
                 <img src="img/insta-icon.png" class="social-icon" alt="instagram" >
                 <img src="img/face-icon.png" class="social-icon" alt="facebook" >
                 <img src="img/tt-icon.png" class="social-icon" alt="twitter" >
@@ -93,16 +132,15 @@
         </div>
     </section>
 
-
     <!----->
 
     <section id="rodape" class="container-fluid">
         <div class="row justify-content-md-center">
-            <div class="col text-center">
-                <img src="img/logo.png" alt="" srcset="">
+            <div class="col-md-3 text-center">
+                <img src="img/logo.png" alt="" srcset="" class="img-fluid">
             </div>
 
-            <div class="col">
+            <div class="col-md-3">
                <h6 class="titulo-rodape">sobre nós</h6>
                <p class="txt-rodape">
                     A Interjeição! nasceu a partir da vontade de mudar 
@@ -113,10 +151,10 @@
                </p>
             </div>
 
-            <div class="col">
+            <div class="col-md-3">
                 <h6>twitter</h6>
             </div>
-            <div class="col">
+            <div class="col-md-3">
                 <h6>instagram</h6>
             </div>
         </div>
