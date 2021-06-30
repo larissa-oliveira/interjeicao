@@ -6,7 +6,6 @@
     <title>Interjeição! - Agência</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/menu.css">
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
@@ -18,29 +17,34 @@
 
 <body>
     <header id="menu-principal" class="container-fluid">
-        <label>
-            <input type='checkbox'>
-            <span class='menu'>
-                <span class='hamburger'></span>
-            </span>
-            <ul>
-                <li>
-                  <a href='/' class="menu-item">home</a>
-                </li>
-                <li>
-                   <a href='/quem-somos.html' style="text-decoration: none;" class="menu-item">quem somos</a>
-                </li>
-                <li>
-                    <a href='/metodologia.html' style="text-decoration: none;" class="menu-item">metodologia</a>
-                </li>
-                <li>
-                    <a href='/nossos-servicos.html' style="text-decoration: none;" class="menu-item">nossos serviços</a>
-                </li>
-                <li>
-                    <a href='#' style="text-decoration: none;" class="menu-item">contato</a>
-                </li>
-            </ul>
-        </label>        
+       <div class="container">
+           <div class="row">
+            <label>
+                <input type='checkbox'>
+                <span class='menu'>
+                    <span class='hamburger'></span>
+                </span>
+                <ul>
+                    <li>
+                      <a href='/' class="menu-item">home</a>
+                    </li>
+                    <li>
+                       <a href='/quem-somos.html' style="text-decoration: none;" class="menu-item">quem somos</a>
+                    </li>
+                    <li>
+                        <a href='/metodologia.html' style="text-decoration: none;" class="menu-item">metodologia</a>
+                    </li>
+                    <li>
+                        <a href='/nossos-servicos.html' style="text-decoration: none;" class="menu-item">nossos serviços</a>
+                    </li>
+                    <li>
+                        <a href='#' style="text-decoration: none;" class="menu-item">contato</a>
+                    </li>
+                </ul>
+            </label> 
+           </div>
+       </div>
+            
 
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
@@ -52,17 +56,16 @@
     </header>
 
     <section id="sobre-nos" class="container">
-        <div class="row">
+        <div class="row justify-content-md-center">
             <div class="col-md-7">
-                <img src="img/pessoas-3.png" alt="" srcset="" class="img-fluid">
+                <img src="img/pessoas-4.png" alt="" srcset="" class="img-fluid hide-mobile">
             </div>
 
-            <div class="col-md-5 text-right" id="sobre-nos-descricao">
+            <div class="col-md-4 text-right" id="sobre-nos-descricao">
                 <span class="mini-titulo">sobre nós</span>
-
-                <h2>olá! nós somos Interjeição! </h2>
-                <h2>uma pequena agência de</h2>
-                <h2>Brasília.</h2>
+                <h2>olá! nós somos Interjeição!
+                uma pequena agência de
+               Brasília.</h2>
                 <a href="quem-somos.html" class="saiba-mais" style="text-decoration: none; color: #000000;">saiba mais</a>
              </div>
         </div>
@@ -96,7 +99,7 @@
     </section>
 
     <section id="nossos-servicos" class="container">
-        <div class="row">
+        <div class="row justify-content-md-center">
             <div class="col text-center">
                 <span class="mini-titulo">nossos serviços</span>
                 <h2 class="marcado">nós amamos encontrar soluções</h2>
@@ -105,19 +108,19 @@
         </div>
 
         <div id="servicos-cat" class="row">
-            <div class="col-lg">   
+            <div class="col-md-3 text-center">   
                 <img src="img/icone-1.png" alt="" srcset="" class="icones">
                 <h5>branding & design</h5>
             </div>
-            <div class="col-lg">  
+            <div class="col-md-3 text-center">  
                 <img src="img/icone-2.png" alt="" srcset="" class="icones"> 
                 <h5>mkt digital</h5>
             </div>
-            <div class="col-lg">   
+            <div class="col-md-3 text-center">   
                 <img src="img/icone-3.png" alt="" srcset="" class="icones">
                 <h5>assessoria<br>de comunicação</h5>
             </div>
-            <div class="col-lg">   
+            <div class="col-md-3 text-center">   
                 <img src="img/icone-4.png" alt="" srcset="" class="icones">
                 <h5>consultoria online</h5>
             </div>
@@ -147,11 +150,7 @@
             <div class="team-carousel ">
                 <div class="item">
                     <img src="img/ghost.png" alt="" srcset="" class="img-fluid">
-                    <div class="etiqueta-time text-center">Mica Rodrigues</div>
-                </div>
-                <div class="item">
-                    <img src="img/robo.png" alt="" srcset="" class="img-fluid">
-                    <div class="etiqueta-time text-center">Daniel Leite</div>
+                    <div class="etiqueta-time text-center">Luiza Cardoso</div>
                 </div>
                 <div class="item">
                     <img src="img/unicornio.png" alt="" srcset="" class="img-fluid">
@@ -178,10 +177,10 @@
             </div>
         </div>
         <div class="row">
-            <div class="col mapa">
+            <div class="col-md-6 mapa">
                 <div id="map"></div>
             </div>
-            <div class="col formulario">
+            <div class="col-md-6 formulario">
                 <form action="">
                     <div class="form-group">
                         <input type="nome" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu nome">
